@@ -3,7 +3,7 @@
 A simple and secure login application built using Django and Django REST Framework (DRF).
 
 ---
-
+ 
 ## Features
 
 - User registration with email and password.

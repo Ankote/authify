@@ -29,9 +29,6 @@ A simple and secure login application built using Django and Django REST Framewo
    ```bash
    git clone <repository-url>
    cd authify
-   pip install -r requirements.txt
-   python manage.py migrate
-   python manage.py createsuperuser
 
    ```
 

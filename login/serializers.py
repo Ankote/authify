@@ -31,3 +31,13 @@ class LoginSerializer(serializers.Serializer):
         if user and user.is_active:
             return user
         raise serializers.ValidationError("Invalid credentials")
+
+class UserSerializer(serializers.HyperlinkedModelSerializer):
+    
+    class Meta:
+        model = User
+        fields = ['id', 'username', 'first_name', 'last_name']
+
+    def create(self, validated_data):
+        print("saved on seriliazer")
+        return User.objects.create(**validated_data)
